@@ -1,0 +1,321 @@
+/* Front Cloud Design System */
+
+/* ============================================
+   Design Tokens - Light Mode (Default)
+   ============================================ */
+:root {
+  /* Brand Colors */
+  --fc-brand-primary: #667eea;
+  --fc-brand-primary-light: #8a9aee;
+  --fc-brand-primary-dark: #4c5fd5;
+  --fc-brand-secondary: #764ba2;
+  --fc-brand-accent: #f093fb;
+  
+  /* Semantic Colors */
+  --fc-success: #10b981;
+  --fc-success-light: #34d399;
+  --fc-success-dark: #059669;
+  --fc-warning: #f59e0b;
+  --fc-warning-light: #fbbf24;
+  --fc-warning-dark: #d97706;
+  --fc-danger: #ef4444;
+  --fc-danger-light: #f87171;
+  --fc-danger-dark: #dc2626;
+  --fc-info: #3b82f6;
+  --fc-info-light: #60a5fa;
+  --fc-info-dark: #2563eb;
+  
+  /* Neutral Colors */
+  --fc-gray-50: #f9fafb;
+  --fc-gray-100: #f3f4f6;
+  --fc-gray-200: #e5e7eb;
+  --fc-gray-300: #d1d5db;
+  --fc-gray-400: #9ca3af;
+  --fc-gray-500: #6b7280;
+  --fc-gray-600: #4b5563;
+  --fc-gray-700: #374151;
+  --fc-gray-800: #1f2937;
+  --fc-gray-900: #111827;
+  
+  /* Background Colors */
+  --fc-bg-primary: #ffffff;
+  --fc-bg-secondary: #f9fafb;
+  --fc-bg-tertiary: #f3f4f6;
+  --fc-bg-elevated: #ffffff;
+  --fc-bg-overlay: rgba(0, 0, 0, 0.5);
+  
+  /* Text Colors */
+  --fc-text-primary: #111827;
+  --fc-text-secondary: #4b5563;
+  --fc-text-tertiary: #6b7280;
+  --fc-text-disabled: #9ca3af;
+  --fc-text-inverse: #ffffff;
+  
+  /* Border Colors */
+  --fc-border-base: #e5e7eb;
+  --fc-border-light: #f3f4f6;
+  --fc-border-dark: #d1d5db;
+  --fc-border-focus: var(--fc-brand-primary);
+  
+  /* Shadow */
+  --fc-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --fc-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --fc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --fc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --fc-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --fc-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Spacing Scale */
+  --fc-space-0: 0;
+  --fc-space-1: 0.25rem;  /* 4px */
+  --fc-space-2: 0.5rem;   /* 8px */
+  --fc-space-3: 0.75rem;  /* 12px */
+  --fc-space-4: 1rem;     /* 16px */
+  --fc-space-5: 1.25rem;  /* 20px */
+  --fc-space-6: 1.5rem;   /* 24px */
+  --fc-space-8: 2rem;     /* 32px */
+  --fc-space-10: 2.5rem;  /* 40px */
+  --fc-space-12: 3rem;    /* 48px */
+  --fc-space-16: 4rem;    /* 64px */
+  
+  /* Border Radius */
+  --fc-radius-none: 0;
+  --fc-radius-sm: 0.25rem;   /* 4px */
+  --fc-radius-base: 0.375rem; /* 6px */
+  --fc-radius-md: 0.5rem;    /* 8px */
+  --fc-radius-lg: 0.75rem;   /* 12px */
+  --fc-radius-xl: 1rem;      /* 16px */
+  --fc-radius-2xl: 1.5rem;   /* 24px */
+  --fc-radius-full: 9999px;
+  
+  /* Typography */
+  --fc-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --fc-font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  
+  --fc-text-xs: 0.75rem;     /* 12px */
+  --fc-text-sm: 0.875rem;    /* 14px */
+  --fc-text-base: 1rem;      /* 16px */
+  --fc-text-lg: 1.125rem;    /* 18px */
+  --fc-text-xl: 1.25rem;     /* 20px */
+  --fc-text-2xl: 1.5rem;     /* 24px */
+  --fc-text-3xl: 1.875rem;   /* 30px */
+  --fc-text-4xl: 2.25rem;    /* 36px */
+  
+  --fc-font-normal: 400;
+  --fc-font-medium: 500;
+  --fc-font-semibold: 600;
+  --fc-font-bold: 700;
+  
+  /* Z-Index Scale */
+  --fc-z-base: 0;
+  --fc-z-dropdown: 1000;
+  --fc-z-sticky: 1020;
+  --fc-z-fixed: 1030;
+  --fc-z-modal-backdrop: 1040;
+  --fc-z-modal: 1050;
+  --fc-z-popover: 1060;
+  --fc-z-tooltip: 1070;
+  
+  /* Transitions */
+  --fc-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fc-transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fc-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================
+   Dark Mode Overrides
+   ============================================ */
+html.dark {
+  color-scheme: dark;
+  
+  /* Background Colors */
+  --fc-bg-primary: #111827;
+  --fc-bg-secondary: #1f2937;
+  --fc-bg-tertiary: #374151;
+  --fc-bg-elevated: #1f2937;
+  --fc-bg-overlay: rgba(0, 0, 0, 0.75);
+  
+  /* Text Colors */
+  --fc-text-primary: #f9fafb;
+  --fc-text-secondary: #d1d5db;
+  --fc-text-tertiary: #9ca3af;
+  --fc-text-disabled: #6b7280;
+  --fc-text-inverse: #111827;
+  
+  /* Border Colors */
+  --fc-border-base: #374151;
+  --fc-border-light: #1f2937;
+  --fc-border-dark: #4b5563;
+  
+  /* Shadows (darker in dark mode) */
+  --fc-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --fc-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --fc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --fc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --fc-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+  --fc-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   Global Styles
+   ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--fc-font-sans);
+  font-size: var(--fc-text-base);
+  line-height: 1.5;
+  color: var(--fc-text-primary);
+  background-color: var(--fc-bg-secondary);
+  transition: background-color var(--fc-transition-base), color var(--fc-transition-base);
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fc-font-semibold);
+  line-height: 1.2;
+  color: var(--fc-text-primary);
+  margin-bottom: var(--fc-space-4);
+}
+
+h1 { font-size: var(--fc-text-3xl); }
+h2 { font-size: var(--fc-text-2xl); }
+h3 { font-size: var(--fc-text-xl); }
+h4 { font-size: var(--fc-text-lg); }
+h5 { font-size: var(--fc-text-base); }
+h6 { font-size: var(--fc-text-sm); }
+
+p {
+  margin-bottom: var(--fc-space-4);
+}
+
+a {
+  color: var(--fc-brand-primary);
+  text-decoration: none;
+  transition: color var(--fc-transition-fast);
+}
+
+a:hover {
+  color: var(--fc-brand-primary-light);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+.fc-transition {
+  transition: all var(--fc-transition-base);
+}
+
+.fc-card {
+  background-color: var(--fc-bg-elevated);
+  border: 1px solid var(--fc-border-base);
+  border-radius: var(--fc-radius-lg);
+  padding: var(--fc-space-6);
+  box-shadow: var(--fc-shadow-sm);
+}
+
+.fc-divider {
+  height: 1px;
+  background-color: var(--fc-border-base);
+  margin: var(--fc-space-6) 0;
+}
+
+/* ============================================
+   Scrollbar Styles
+   ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fc-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fc-gray-400);
+  border-radius: var(--fc-radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fc-gray-500);
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: var(--fc-gray-600);
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--fc-gray-500);
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn var(--fc-transition-base);
+}
+
+/* ============================================
+   Legacy Variable Aliases (for compatibility)
+   ============================================ */
+:root {
+  --color-primary: var(--fc-brand-primary);
+  --color-success: var(--fc-success);
+  --color-warning: var(--fc-warning);
+  --color-danger: var(--fc-danger);
+  --color-info: var(--fc-info);
+  
+  --bg-primary: var(--fc-bg-primary);
+  --bg-secondary: var(--fc-bg-secondary);
+  --bg-tertiary: var(--fc-bg-tertiary);
+  
+  --text-primary: var(--fc-text-primary);
+  --text-regular: var(--fc-text-secondary);
+  --text-secondary: var(--fc-text-tertiary);
+  --text-placeholder: var(--fc-text-disabled);
+  
+  --border-base: var(--fc-border-base);
+  --border-light: var(--fc-border-light);
+  --border-lighter: var(--fc-border-light);
+  
+  --spacing-xs: var(--fc-space-1);
+  --spacing-sm: var(--fc-space-2);
+  --spacing-md: var(--fc-space-4);
+  --spacing-lg: var(--fc-space-6);
+  --spacing-xl: var(--fc-space-8);
+  
+  --radius-sm: var(--fc-radius-sm);
+  --radius-md: var(--fc-radius-md);
+  --radius-lg: var(--fc-radius-lg);
+  
+  --shadow-sm: var(--fc-shadow-sm);
+  --shadow-md: var(--fc-shadow-md);
+  --shadow-lg: var(--fc-shadow-lg);
+}
